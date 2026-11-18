@@ -1,0 +1,178 @@
+
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#10172a">
+<title>Nova Studio · Demo Workspace</title>
+<style>
+:root{--bg:#0b1020;--panel:#121a2e;--panel2:#18233b;--line:#263451;--text:#edf3ff;--muted:#94a3bd;--accent:#8b7cff;--cyan:#54d6df;--good:#73d6a2}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(circle at 80% 0%,#25214b 0,transparent 32%),var(--bg);color:var(--text);font:14px/1.55 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}
+button,input{font:inherit}
+.shell{max-width:1180px;margin:auto;padding:24px}
+.top{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:28px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:18px}
+.logo{width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,var(--accent),var(--cyan));display:grid;place-items:center;color:#10172a;font-weight:900}
+.pill{border:1px solid #3c4770;background:#171d39;color:#c8c5ff;padding:7px 12px;border-radius:999px;font-size:12px}
+.hero{padding:28px;border:1px solid var(--line);border-radius:24px;background:linear-gradient(120deg,#171e38,#131a2d 60%,#18243b);display:flex;justify-content:space-between;gap:20px;align-items:center}
+.eyebrow{color:var(--cyan);font-weight:700;font-size:11px;letter-spacing:1.7px;text-transform:uppercase}
+.hero h1{font-size:clamp(26px,5vw,42px);line-height:1.12;margin:10px 0}
+.hero p{color:var(--muted);max-width:600px;margin:0}
+.hero-mark{font-size:62px;opacity:.85}
+.section-head{display:flex;align-items:end;justify-content:space-between;margin:30px 0 14px}
+.section-head h2{font-size:17px;margin:0}
+.section-head span{color:var(--muted);font-size:12px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:19px;min-height:170px;display:flex;flex-direction:column}
+.ico{width:40px;height:40px;border-radius:13px;background:#242747;display:grid;place-items:center;font-size:19px;margin-bottom:13px}
+.card h3{margin:0 0 5px;font-size:15px}
+.card p{margin:0;color:var(--muted);font-size:12px}
+.tag{margin-top:auto;padding-top:14px;color:var(--good);font-size:11px;font-weight:700}
+.workspace{display:grid;grid-template-columns:1.1fr .9fr;gap:14px;margin-top:14px}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:20px}
+.panel h2{font-size:16px;margin:0 0 14px}
+.field{display:grid;gap:6px;margin:12px 0}
+.field label{font-size:12px;color:var(--muted)}
+input{width:100%;border:1px solid var(--line);background:#0d1426;color:var(--text);padding:11px 12px;border-radius:11px;outline:none}
+input:focus{border-color:var(--accent)}
+.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:14px}
+button{border:0;border-radius:11px;padding:10px 14px;background:var(--accent);color:white;font-weight:700;cursor:pointer}
+button.secondary{background:#26324d;color:#dce6ff}
+.preview{border:1px dashed #526080;border-radius:14px;min-height:190px;padding:18px;display:grid;place-items:center;text-align:center;background:repeating-linear-gradient(135deg,#111a2d,#111a2d 12px,#131e33 12px,#131e33 24px)}
+.stamp{display:inline-block;border:2px solid #ffca72;color:#ffca72;padding:5px 10px;border-radius:7px;font-weight:900;letter-spacing:2px;transform:rotate(-7deg);font-size:12px}
+.preview strong{display:block;font-size:18px;margin:12px 0 4px}
+.preview small{color:var(--muted)}
+.notice{margin-top:18px;border:1px solid #665238;background:#2a2118;color:#f5d7a5;border-radius:13px;padding:13px;font-size:12px}
+.foot{color:#71809d;text-align:center;font-size:11px;padding:28px 0 10px}
+@media(max-width:800px){.grid{grid-template-columns:repeat(2,1fr)}.workspace{grid-template-columns:1fr}.hero-mark{display:none}}
+@media(max-width:520px){.shell{padding:16px}.grid{grid-template-columns:1fr}.hero{padding:21px}.top{align-items:flex-start}}
+</style>
+</head>
+<body>
+<div class="shell">
+<header class="top">
+<div class="brand">
+<div class="logo">N</div>
+<div>Nova Studio<div style="font-size:10px;color:var(--muted);font-weight:500">DEMO WORKSPACE</div></div>
+</div>
+<span class="pill">● Hệ thống bản xem trước</span>
+</header>
+
+<section class="hero">
+<div>
+<div class="eyebrow">Workspace · 2026</div>
+<h1>Không gian công cụ<br>gọn gàng, hiện đại.</h1>
+<p>Bảng điều khiển demo cho các tiện ích giao diện, lịch sử thao tác và mẫu thiết kế. Dữ liệu hiển thị chỉ là dữ liệu minh họa.</p>
+</div>
+<div class="hero-mark">✦</div>
+</section>
+
+<div class="section-head">
+<h2>Công cụ trong workspace</h2>
+<span>06 mô-đun giao diện</span>
+</div>
+
+<section class="grid">
+<article class="card">
+<div class="ico">▣</div>
+<h3>Mẫu giao dịch demo</h3>
+<p>Tạo bản xem trước giao dịch hư cấu, có nhãn DEMO rõ ràng và không mô phỏng chứng từ ngân hàng thật.</p>
+<div class="tag">● Bản minh họa</div>
+</article>
+<article class="card">
+<div class="ico">▤</div>
+<h3>Thẻ hồ sơ mẫu</h3>
+<p>Thiết kế thẻ hồ sơ nhân vật hư cấu, không dùng số định danh hoặc mẫu giấy tờ chính thức.</p>
+<div class="tag">● Bản minh họa</div>
+</article>
+<article class="card">
+<div class="ico">⌁</div>
+<h3>Tạo mã QR demo</h3>
+<p>Hiển thị QR chứa nội dung văn bản thử nghiệm, không đại diện tài khoản hay thanh toán.</p>
+<div class="tag">● Bản minh họa</div>
+</article>
+<article class="card">
+<div class="ico">◷</div>
+<h3>Lịch sử hoạt động</h3>
+<p>Khu vực hiển thị các thao tác demo trong phiên trình duyệt hiện tại.</p>
+<div class="tag">● Sẵn sàng</div>
+</article>
+<article class="card">
+<div class="ico">⚙</div>
+<h3>Cài đặt giao diện</h3>
+<p>Không gian tùy chỉnh tên hiển thị và thông tin workspace trên thiết bị.</p>
+<div class="tag">● Sẵn sàng</div>
+</article>
+<article class="card">
+<div class="ico">?</div>
+<h3>Trợ giúp</h3>
+<p>Hướng dẫn sử dụng và thông tin về giới hạn của bản demo tĩnh.</p>
+<div class="tag">● Sẵn sàng</div>
+</article>
+</section>
+
+<section class="workspace">
+<div class="panel">
+<h2>Tạo bản xem trước demo</h2>
+<div class="field">
+<label for="name">Tên hiển thị hư cấu</label>
+<input id="name" maxlength="40" placeholder="Ví dụ: Nguyễn An (DEMO)">
+</div>
+<div class="field">
+<label for="desc">Nội dung ghi chú</label>
+<input id="desc" maxlength="90" placeholder="Nội dung minh họa...">
+</div>
+<div class="actions">
+<button id="make">Tạo xem trước</button>
+<button class="secondary" id="reset">Đặt lại</button>
+</div>
+<div class="notice">Mọi bản xem trước đều được đánh dấu DEMO và chỉ dùng dữ liệu tự nhập. Trang này không tạo bill ngân hàng, giấy tờ tùy thân, mã QR thanh toán hoặc chứng từ có thể nhầm là thật.</div>
+</div>
+
+<div class="panel">
+<h2>Kết quả xem trước</h2>
+<div class="preview" id="preview">
+<div>
+<span class="stamp">DEMO ONLY</span>
+<strong>Chưa có nội dung</strong>
+<small>Nhập thông tin bên trái để xem bản minh họa.</small>
+</div>
+</div>
+</div>
+</section>
+
+<div class="foot">Nova Studio · Static HTML · Không cần PHP hoặc cơ sở dữ liệu</div>
+</div>
+
+<script>
+const $=id=>document.getElementById(id);
+
+$('make').addEventListener('click',()=>{
+const name=$('name').value.trim()||'Người dùng minh họa';
+const desc=$('desc').value.trim()||'Nội dung thử nghiệm';
+
+const box=document.createElement('div');
+const stamp=document.createElement('span');
+stamp.className='stamp';
+stamp.textContent='DEMO ONLY';
+
+const title=document.createElement('strong');
+title.textContent=name;
+
+const note=document.createElement('small');
+note.textContent=desc;
+
+box.append(stamp,title,note);
+$('preview').replaceChildren(box);
+});
+
+$('reset').addEventListener('click',()=>{
+$('name').value='';
+$('desc').value='';
+$('preview').innerHTML='<div><span class="stamp">DEMO ONLY</span><strong>Chưa có nội dung</strong><small>Nhập thông tin bên trái để xem bản minh họa.</small></div>';
+});
+</script>
+</body>
+</html>
